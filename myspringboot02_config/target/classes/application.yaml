@@ -1,0 +1,18 @@
+person:
+  name: fzg${random.uuid}
+  age: ${random.int}
+  happy: true
+  birth: 2021/7/28
+  maps: {k1: v1,k2: v2}
+  hello: happy
+  list:
+    - code
+    - music
+    - girl
+  dog:
+    name: ${person.hello:hello}_小黑
+    age: 2
+
+dog:
+  name: ${person.hello:hello}_阿黄
+  age: 3
